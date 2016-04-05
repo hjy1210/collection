@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:dir='data:blog.languageDirection' lang='zh-TW' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+    <!-- STEP 4. TAGS CUSTOMIZATION -->
+    <title>Bootstrap, from Twitter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- END STEP 4. TAGS CUSTOMIZATION -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <!-- STEP 5. CSS CUSTOMIZATION -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--PLACE BLOGSPOT XML HERE-->
+    <style type="text/css">
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .sidebar-nav {
+        padding: 9px 0;
+    }
+    
+    .Navbar {
+        display: none;
+    }
+    
+    @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+            float: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    
+    <!--PLACE ALL CUSTOMED CSS AFTER THIS-->
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+    <!-- END STEP 5. CSS CUSTOMIZATION -->
+</head>
+
+<body>
+    <!-- STEP 6. CUSTOMIZING THE NAVIGATION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">BLOG NAME</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END STEP 6. CUSTOMIZING THE NAVIGATION -->
+    <!-- STEP 7. SIDEBAR AND MAIN CONTENT -->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="well">
+                    SIDE BAR GOES HERE
+                </div>
+                <!--/.well -->
+            </div>
+            <!--/span-->
+            <div class="span9">
+                <div class="well">
+                    MAIN CONTENT GOES HERE
+                </div>
+            </div>
+            <!--/span-->
+        </div>
+        <!--/row-->
+        <hr/>
+        <footer>
+            <p>COMPANY &#169; 2013</p>
+        </footer>
+    </div>
+    <!-- END STEP 7. MAIN CONTENT -->
+    <!-- STEP 8. CUSTOM JS LOCATION -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src='http://dl.dropbox.com/u/78775250/bootstrap-v2/js/jquery.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- END STEP 8. CUSTOM JS LOCATION -->
+</body>
+
+</html>

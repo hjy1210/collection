@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:dir='data:blog.languageDirection' lang='zh-TW' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+    <!-- STEP 4. TAGS CUSTOMIZATION -->
+    <b:if cond='data:blog.pageType == "index"'>
+        <title>
+            <data:blog.pageTitle/>
+        </title>
+        <b:else/>
+        <title>
+            <data:blog.pageName/> ::
+            <data:blog.title/>
+        </title>
+    </b:if>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- END STEP 4. TAGS CUSTOMIZATION -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <!-- STEP 5. CSS CUSTOMIZATION -->
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+    <!--PLACE BLOGSPOT XML HERE-->
+    <b:skin>
+        <![CDATA[/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#E0DED5" value="#E0DED5">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333" value="#333333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#DF3F3F" value="#DF3F3F">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#E2C0C0" value="#E2C0C0">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#5E1111" value="#5E1111">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#E0DED5" value="#E0DED5">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#5E1111" value="#5E1111">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#333" value="#333333">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#DF3F3F" value="#DF3F3F">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Arial, sans-serif" value="normal normal 100% Arial, sans-serif">
+*/
+]]>
+    </b:skin>
+    <style type="text/css">
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .sidebar-nav {
+        padding: 9px 0;
+    }
+    
+    .Navbar {
+        display: none;
+    }
+    
+    @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+            float: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    
+    <!--PLACE ALL CUSTOMED CSS AFTER THIS-->
+    </style>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+    <!-- END STEP 5. CSS CUSTOMIZATION -->
+</head>
+
+<body>
+    <!-- STEP 6. CUSTOMIZING THE NAVIGATION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#"><data:blog.pageTitle/></a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a expr:href='data:blog.homepageUrl'>Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END STEP 6. CUSTOMIZING THE NAVIGATION -->
+    <!-- STEP 7. SIDEBAR AND MAIN CONTENT -->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="well">
+                    <!--SIDE BAR GOES HERE-->
+                    <b:section class='sidebar' id='sidebar' preferred='yes'/>
+                </div>
+                <!--/.well -->
+            </div>
+            <!--/span-->
+            <div class="span9">
+                <div class="well">
+                    <!--MAIN CONTENT GOES HERE-->
+                    <b:section class='main' id='main' showaddelement='no'>
+						<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+					</b:section>
+                </div>
+            </div>
+            <!--/span-->
+        </div>
+        <!--/row-->
+        <hr/>
+        <footer>
+            <!--<p>COMPANY &#169; 2013</p>-->
+            <p><data:blog.pageTitle/> &#169; 2013</p>
+        </footer>
+    </div>
+    <!-- END STEP 7. MAIN CONTENT -->
+    <!-- STEP 8. CUSTOM JS LOCATION -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
+    </script>
+    <!-- END STEP 8. CUSTOM JS LOCATION -->
+</body>
+
+</html>
