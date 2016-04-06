@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Sublime tutorial</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css' rel='stylesheet'/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'/>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'/>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
+    </script>
+ </head>
+<body>
+<h2>Sublime text 的簡易有用的snippet</h2>
+sublime text是多目標的文字編輯器，不同的程式語言需要不同的程式片段(snippet)。當你編輯的檔案副檔名為html時，html,css的程式片段會發生作用。下面是按鍵與產出的幾個例子，先出現的是按鍵，後出現的是產出。<br>
+style<kbd>tab</kbd>
+<blockquote>
+&lt;style type="text/css">&lt;/style>
+</blockquote>
+div.me<kbd>tab</kbd>
+<blockquote>
+&lt;div class="me">&lt;/div>
+</blockquote>
+ol<kbd>tab</kbd>
+<blockquote>
+&lt;ol>&lt;/ol>
+</blockquote>
+div#me<kbd>tab</kbd>
+<blockquote>
+&lt;div id="me">&lt;/div>
+</blockquote>
+html<kbd>tab</kbd>
+<pre><blockquote>
+&lt;html>
+&lt;head>
+	&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+
+&lt;/body>
+&lt;/html>
+</blockquote></pre>
+注意到沒有，語法與HTML、CSS息息相關，所以相當好記。
+
+<h2>Install package manager</h2>
+到 <a href="https://packagecontrol.io/installation">packagecontrol</a>網站，下載適當的程式碼(有sublime text 2 與sublime text 3兩種版本)，依據說明進行安裝。
+之後，在sublime text中，按<kbd>ctrl+shift+p</kbd> 出現選單列對話框，當你在對話框上方的文字方塊輸入control的瞬間，
+選單列會動態智慧的出現與control相關，你可能想要的指令，例如list packages, install packages，這就代表package control安裝成功。令人驚訝，sublime text的字串模糊比對能力強大，請多測試。例如，輸入list可以看到package control: list packages的選項，選取它，可以列出已經安裝了多少plugin。
+
+前面已經介紹了一些snippet，要是自己要寫客製化的snippet，也是輕而易舉。雖然，從工具選單可以選取new snippet進行創造，但用SnippetMaker這個plugin來製作snippet更是容易。
+
+有了package manager，要安裝各式各樣的plugin只是舉手之勞。
+
+<h2>安裝其它的plugin</h2>
+以SnippetMaker為例，說明安裝過程。
+<ol>
+	<li>
+		<kbd>ctrl+shift+p</kbd>，在對話框中的文字方塊輸入install，選取install package。此時，選單列產生變化，之前的選項是指令選項，現在的選項變成plugin選項。
+	</li>
+	<li>
+		在文字方塊中輸入snippet，此時SnippetMaker出現在選項之中，選取它就可完成安裝
+		(可以在狀態列看到安裝的訊息)。
+	</li>
+</ol>
+</body>
+</html>
